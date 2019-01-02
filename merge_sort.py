@@ -9,13 +9,13 @@ def merge(x):
     a = []
     while len(c) != 0 and len(d) != 0:
         if c[0] < d[0]:
-            a.append(c[0]) #a+=[c[0]]
+            a.append(c[0])  # a+=[c[0]]
             c.remove(c[0])
         else:
             a.append(d[0])
             d.remove(d[0])
     a.extend(c+d)       
-    return(a)
+    return a
 
 
 def merge_2(x):
@@ -27,7 +27,7 @@ def merge_2(x):
     c = b[0:m//2]
     d = b[m//2:m]
     a = []
-    i = j =0
+    i = j = 0
     while i < len(c) and j < len(d):
         if c[i] < d[j]:
             a += [c[i]]
@@ -36,12 +36,9 @@ def merge_2(x):
             a += [d[j]]
             j += 1
     a += c[i:] + d[j:]      
-    return(a)
+    return a
 
 
-
-
-x = [1,2,4,2,7,0,9,7,5,9,0,4,3,1]
-print(merge(x))
-print(merge_2(x))
-
+my_list = [1, 2, 4, 2, 7, 0, 9, 7, 5, 9, 0, 4, 3, 1]
+print(merge(my_list))
+print(merge_2(my_list))

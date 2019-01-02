@@ -6,11 +6,13 @@ def counting(prime_list):
     sorted_list = []
     for i in range(maxx + 1):
         sorted_list.extend(y[i] * [i])   
-    #or
+    # or
     # k = 0
     # for i in range(maxx+1):
     #     for j in range(y[i]):#while(y[i]<0) y[i]=y[i]-1
     #         sorted_list[k],k,=i,k+1
-    return(sorted_list)  
-x = [1,1,1,1,1,1,1,3,3,3,3,3,0,0,0,0,0,0,5,5,5,4,4,4,4,7,6,6,6]
-print(counting(x))    
+    return sorted_list
+
+
+x = [1, 1, 1, 1, 1, 1, 1, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 0, 5, 5, 5, 4, 4, 4, 4, 7, 6, 6, 6]
+print(counting(x))

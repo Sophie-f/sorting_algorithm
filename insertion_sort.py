@@ -7,5 +7,7 @@ def insertion(x):
             x[j+1], j = x[j], j-1
         x[j+1] = temp        
     return x
-x = [1,4,0,2,7,3]
-print(insertion(x))    
+
+
+a = [1, 4, 0, 2, 7, 3]
+print(insertion(a))
