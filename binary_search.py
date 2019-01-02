@@ -1,5 +1,5 @@
 def binary(array, y):
-    mid = len(array)//2
+    mid = len(array) // 2
     if y == array[mid]:
         return mid
     elif len(array) > 1 and y < array[mid]:
