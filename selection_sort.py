@@ -3,7 +3,7 @@ def selection(x):
     for i in range(n-1):
         min_num = i
         for j in range(i+1, n):
-            if x[j] < x[min]:
+            if x[j] < x[min_num]:
                 min_num = j
         x[i], x[min_num] = x[min_num], x[i]
     return x
