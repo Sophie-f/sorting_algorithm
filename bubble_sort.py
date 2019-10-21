@@ -12,5 +12,5 @@ def bubble(x):
     return x
 
 
-y = [4, 3, 0, 100, 1000]
+y = [0, 30, 50, 100, 1000]
 print(bubble(y))
